@@ -26,7 +26,7 @@ const assertArraysEqual = function(array1, array2) {
 // 1. The array to work with
 // 2. The callback (which Lodash calls "predicate")
 
-const takeUntil = function(array, callback) {
+const takeUntil = (array, callback) => {
   array.forEach((item, index) => {
     if (callback(item)) {
       array = array.slice(0, index);
