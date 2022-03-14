@@ -18,7 +18,10 @@ const countLetters = function(string) {
    }
   } 
   return output;
-}
+};
+
+module.exports = countLetters;
+
 countLetters("lighthouse");
 console.log(countLetters("lighthouse"));
 console.log(countLetters("josh wrote this code"));
